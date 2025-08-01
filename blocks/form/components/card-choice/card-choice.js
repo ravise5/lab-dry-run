@@ -7,7 +7,7 @@ function createCard(element, enums) {
       radioWrapper.querySelector('label').textContent = enums[index]?.name;
     }
     radioWrapper.querySelector('input').dataset.index = index;
-    const image = createOptimizedPicture(enums[index].image || '/blocks/form/components/card-choice/card.png', 'card-image');
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');
     const benefitsUl = document.createElement('ul');
     benefitsUl.className = 'card-choice-benefits-list';
     const benefits = enums[index]?.benefits?.split(',')?.map((b) => b.trim())?.filter(Boolean);
